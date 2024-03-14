@@ -5,8 +5,9 @@ import Details from '@/components/userDetails/Details';
 import AddUserPanel from '@/components/addUserPanel/AddUserPanel';
 import EditUserPanel from '@/components/editUserPanel/EditUserPanel';
 
+
 const getData = async (id) => {
-  const res = await fetch(`http://localhost:3000/api/admin/${id}`, {
+  const res = await fetch(`http://localhost:3000/api/admin/edit/${id}`, {
     cache: "no-store",
   });
 
