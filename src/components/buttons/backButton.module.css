@@ -1,0 +1,36 @@
+.button{
+	position: relative;
+	/* top: -50px; */
+width: 81px;
+height: 38px;
+padding: 8px, 16px, 8px, 16px;
+border-radius: 8px;
+border: 1px;
+border-color: white;
+border-style: solid;
+gap: 8px;
+margin: 32px 0 ;
+color: white;
+background-color: transparent;
+}
+
+.button:hover{
+	cursor: pointer;
+}
+
+.imgBack,
+.imgLogout{
+	margin: 32px  0 ;
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .imgBack,
+	.imgLogout{
+		display: block;
+	}
+
+	.button{
+		display: none;
+	}
+}

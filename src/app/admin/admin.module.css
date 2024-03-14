@@ -1,0 +1,33 @@
+.container {
+  height: 200px;
+  background-color: rgba(81, 38, 137, 1);
+  color: black;
+  background-size: cover;
+  background-position: center center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.content {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    height: 220px;
+  }
+
+  .content {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

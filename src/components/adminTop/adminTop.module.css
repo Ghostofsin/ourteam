@@ -1,0 +1,12 @@
+
+.textContainer {
+  text-align: center;
+}
+
+.header {
+	margin-top: 0;
+	padding-top: 0;
+  font-size: 64px;
+  font-weight: 400;
+  color: white;
+}
