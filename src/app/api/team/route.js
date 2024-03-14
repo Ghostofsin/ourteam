@@ -2,7 +2,7 @@ import { connectDb } from "@/lib/db";
 import { Partner } from "@/lib/models";
 import { NextResponse } from "next/server";
 
-// export const dynamic = 'force-dynamic'
+export const dynamic = 'force-dynamic'
 
 export async function PATCH (req, res){
 	const {method, body} = req
