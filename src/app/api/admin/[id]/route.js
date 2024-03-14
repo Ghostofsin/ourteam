@@ -2,7 +2,7 @@ import { connectDb } from "@/lib/db";
 import { Partner } from "@/lib/models";
 import { NextResponse } from "next/server";
 
-export const dynamic = 'force-dynamic'
+// export const dynamic = 'force-dynamic'
 
 // using params for getting one record
 export async function GET (request, {params}){
