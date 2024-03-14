@@ -4,10 +4,11 @@ import LogOutButton from '@/components/buttons/LogOutButton';
 import Details from '@/components/userDetails/Details';
 import AddUserPanel from '@/components/addUserPanel/AddUserPanel';
 import EditUserPanel from '@/components/editUserPanel/EditUserPanel';
+import { getPartnerById } from '@/lib/methods';
 
 
 const getData = async (id) => {
-  const res = await fetch(`http://localhost:3000/api/admin/edit/${id}`, {
+  const res = await fetch(`http://localhost:3000/api/admin/${id}`, {
     cache: "no-store",
   });
 
@@ -19,7 +20,7 @@ const getData = async (id) => {
 
 export default async function AdminSinglePage({ params }) {
   const { id } = params;
-  const partner = await getData(id);
+  const partner = await getPartnerById(id);
 
   return (
     <div>
