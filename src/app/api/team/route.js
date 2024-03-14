@@ -7,7 +7,6 @@ export const dynamic = 'force-dynamic'
 export async function PATCH (req, res){
 	const {method, body} = req
 	
-	console.log("BBBNOOODYYYYY", body)
 	try {
 		connectDb()
 		const partner = await Partner.findByIdAndUpdate(
@@ -16,7 +15,6 @@ export async function PATCH (req, res){
 			{ new: true } 
 		);
 
-		console.log("PAAARRRRTTTNEEERRRR",partner)
 		return NextResponse.json(partner)
 	} catch (error) {
 		console.log(error);
